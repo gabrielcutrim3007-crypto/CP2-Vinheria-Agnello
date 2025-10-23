@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f3f3ff;
+    color: #333;
+}
+
+header {
+    background-color: #791c1cff;
+    color: #201f1fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.hero {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.vinhos-lista {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.vinho-item {
+    background: white;
+    border: 1px solid #f8f8f8ff;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.vinho-item img {
+    width: 100%;
+    height: auto;
+}
+
+.verde {
+    color: green;
+}
+
+.galeria {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    height: auto;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,00.1);
+}
+
+.contato img {
+    display: block;
+    magin: 20px auto;
+    max-width: 300px;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #540d0d;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #7a1c1c;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+@import url("efeitos.css");
