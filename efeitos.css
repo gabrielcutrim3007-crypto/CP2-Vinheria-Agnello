@@ -1,0 +1,143 @@
+/* 1) Hover em links do menu */
+nav ul li a:hover {
+    color: #540d0d;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* 2) Foco nos campos do formulário */
+form input:focus; 
+form textarea:focus {
+    border-color: #6bb2d3;
+    box-shadow: 0 0 5px #6bb2d3;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.historia:hover {
+    color: #c9eb09ff;
+    text-decorarion: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.produtos:hover {
+    color: #c9eb09ff;
+    text-decoration: undeline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.interior:hover {
+    color: #c9eb09ff;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decorartion 0.3 ease;
+}
+
+.contato:hover {
+    color: #c9eb09ff;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.inicio:hover {
+    color: #c9eb09ff;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3 ease;
+}
+
+/* 3) Ímpares da galeria com tonalidade diferente */
+.galeria:nth-child(odd) img {
+    filter: brightness(0.9);
+}
+
+
+/* ==============================
+   2. Pseudo-elementos
+   ============================== */
+
+/* 1) Linha decorativa abaixo dos títulos */
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #540d0d;
+    margin: 8px auto 20px;
+}
+
+/* 2) Texto estilizado antes do footer */
+footer::before {
+    content: "🍇 Vinharia Agnello 🍇";
+    display: block;
+    color: #aaa;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+
+/* ==============================
+   3. Animação com @keyframes
+   ============================== */
+
+@keyframes aparecer {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+.hero h1 {
+    animation: aparecer 2s infinite ease-in-out;
+}
+
+
+
+/* ==============================
+   4. Transições suaves e transformações
+   ============================== */
+
+/* Vinhos com leve zoom ao passar o mouse */
+
+.video {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.video:hover {
+    transform: scale(1.05);
+    bex-shadow: 4px 4px 15px rgba(7,7,7,0.2);
+}
+
+.vinho-item {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vinho-item:hover {
+    transform: scale(1.05); /* ← Transformação #1 */
+    box-shadow: 4px 4px 15px rgba(7, 7, 7, 0.2);
+}
+
+/* Imagens da galeria com leve rotação ao hover */
+.galeria img {
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: rotate(3deg) scale(1.03); /* ← Transformação #2 */
+    filter: brightness(1.1);
+}
+
+.contato img {
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.contato img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+/* Botão do formulário com transição */
+form button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #7a1c1c;
+    transform: scale(1.08);
+}
