@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Vinharia Agnello</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="efeitos.css">
+</head>
+<body>
+
+    <header>
+        <img src="imgs/logo_vinharia_agnello.png" alt="Logo da Vinharia Agnello" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#vinhos">Nossos Vinhos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Bem-vindo à Vinheria Agnello</h1>
+        <p>Tradição, sabor e qualidade em cada taça.&#x1F377;</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <a href="pages/pagina1.html" title="Ir para história" class="historia">História</a>
+        <p>A Vinheria Agnello é uma empresa familiar, dirigida pelo proprietário Giulio e sua filha Bianca, que atua há mais de 15 anos com apenas uma loja física, que emprega mais 6 funcionários, entre a administração, estoque e vendas. Nossa missão é proporcionar aos nossos clientes uma experiencia única, oferecendo uma seleção cuidadosa de vinhos nacionais e importados, além de um atendimento personalizado e acolhedor. Venha nos visitar e descubra o mundo dos vinhos conosco!
+        </p>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/7U4XBZzRKqY" title="Vinheria Agnello" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+    </section>
+
+    <section id="vinhos">
+        <h2>Nossos Vinhos</h2>
+        <a href="pages/pagina2.html" title="Ir para produtos" class="produtos">Produtos</a>
+            <div class="vinho-item">
+                <img src="imgs/vinhos_tintos2.jpg" alt="Vinhos Tintos">
+                <h3>Vinhos Tintos</h3> 
+                <p class="verde">R$150,00</p>
+            </div>
+            <div class="vinho-item">
+                <img src="imgs/vinhos_brancos.jpg" alt="Vinhos Brancos">
+                <h3>Vinhos Brancos</h3>
+                <p class="verde">R$100,00</p>
+            </div>
+            <div class="vinho-item">
+                <img src="imgs/vinhos_roses.webp" alt="Vinhos Rosés">
+                <h3>Vinhos Rosés</h3>
+                <p class="verde">R$85,00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <a href="pages/pagina3.html" title="Ir para galeria" class="interior">Interior da loja</a>
+        <div class="galeria">
+            <img src="imgs/interior_loja.jpeg" alt="Interior da loja">
+            <h3>Interior da Loja</h3>
+        </div>
+        <div class="galeria">
+            <img src="imgs/interior_loja2.jpg" alt="Interior da loja">
+        </div>
+        <div class="galeria">
+            <img src="imgs/interior_loja3.jpg" alt="Interior da loja">
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <a href="pages/pagina4.html" title="Ir para contato" class="contato">Contato</a>
+        <div class="contato">
+            <img src="imgs/la_vinheria.jpeg" alt="Logo da Vinheria Agnello">
+        </div>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vinharia Agnello. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
